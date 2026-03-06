@@ -160,10 +160,10 @@
     .hero-stats {
       display: flex;
       gap: 40px;
-      margin-top: 48px;
+      margin-top: 40px;
       flex-wrap: wrap;
       justify-content: center;
-      animation: fadeUp .9s ease .35s both;
+      animation: fadeUp .9s ease .42s both;
     }
 
     .stat {
@@ -467,6 +467,50 @@
 
     footer a { color: var(--accent); text-decoration: none; }
 
+    /* ── HERO APP BTNS ── */
+    .hero-app-btns {
+      display: flex;
+      gap: 14px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+      justify-content: center;
+      animation: fadeUp .9s ease .3s both;
+    }
+
+    .hero-app-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 22px;
+      border-radius: 14px;
+      text-decoration: none;
+      min-width: 168px;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      transition: all .25s;
+      border: 2px solid transparent;
+    }
+
+    .hero-app-btn.ios {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .hero-app-btn.android {
+      background: #0e0e0e;
+      color: var(--white);
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    .hero-app-btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 14px 40px rgba(0,0,0,0.4); }
+    .hero-app-btn.ios:hover { box-shadow: 0 14px 40px rgba(245,194,0,0.25); border-color: var(--accent); }
+
+    .hero-app-icon { font-size: 1.9rem; flex-shrink: 0; }
+
+    .hero-app-text { display: flex; flex-direction: column; line-height: 1.25; text-align: left; }
+    .hero-app-text small { font-size: 0.67rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .65; }
+    .hero-app-text strong { font-size: 0.97rem; }
+
     /* ── DIVIDER ── */
     .divider {
       height: 1px;
@@ -566,6 +610,24 @@
     <p class="hero-sub">
       Ehliyet sınav soruları, çıkmış testler ve online soru çözümü — tek platformda.
     </p>
+    <!-- App Download Buttons in Hero -->
+    <div class="hero-app-btns">
+      <a href="https://apps.apple.com/us/app/id6744372996" target="_blank" rel="noopener" class="hero-app-btn ios">
+        <div class="hero-app-icon"> </div>
+        <div class="hero-app-text">
+          <small>App Store</small>
+          <strong>iPhone & iPad</strong>
+        </div>
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.ehliyetsorulari.cenkhoca" target="_blank" rel="noopener" class="hero-app-btn android">
+        <div class="hero-app-icon">🤖</div>
+        <div class="hero-app-text">
+          <small>Google Play</small>
+          <strong>Android</strong>
+        </div>
+      </a>
+    </div>
+
     <div class="hero-stats">
       <div class="stat">
         <div class="stat-num">1000+</div>
@@ -578,10 +640,6 @@
       <div class="stat">
         <div class="stat-num">2</div>
         <div class="stat-label">Platform</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">iOS + Android</div>
-        <div class="stat-label">Uygulama</div>
       </div>
     </div>
     <div class="hero-scroll">Keşfet</div>
