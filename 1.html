@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ehliyet Cenk Hoca | 2026 Ehliyet Sınav Soruları ve Hazırlık</title>
+  
+  <meta name="description" content="Cenk Hoca ile ehliyet sınavını tek seferde geçin. 2026 güncel ehliyet sınav soruları, çıkmış testler ve görüntülü çözümler cebinizde." />
+  <meta name="keywords" content="ehliyet sınav soruları, cenk hoca ehliyet, ehliyet çıkmış sorular, 2026 ehliyet sınavı, e-sınav hazırlık" />
+  <meta name="author" content="Cenk Hoca" />
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ehliyet Cenk Hoca | Sınav Hazırlık Platformu" />
+  <meta property="og:description" content="Güncel soru bankası ve mobil uygulamalarla ehliyet sınavına profesyonel hazırlanın." />
+  <meta property="og:image" content="http://ehliyetcenkhoca.com/cenkhoca.png" />
+  <meta property="og:url" content="http://ehliyetcenkhoca.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  
+  <style>
+    :root {
+      --primary: #0f172a;
+      --primary-light: #1e293b;
+      --accent: #eab308;
+      --accent-hover: #ca8a04;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-soft: #f8fafc;
+      --white: #ffffff;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --radius: 12px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { 
+      background: var(--bg-soft); 
+      color: var(--text-main); 
+      font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Top Banner */
+    .top-banner {
+      background: var(--primary);
+      color: var(--white);
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .top-banner a { color: var(--accent); text-decoration: none; font-weight: 700; margin-left: 10px; }
+
+    /* Nav */
+    nav {
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e2e8f0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+    }
+
+    .logo-area { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .logo-area img { height: 40px; border-radius: 8px; }
+    .logo-text { font-weight: 800; color: var(--primary); font-size: 1.2rem; }
+
+    .nav-menu { display: flex; gap: 24px; align-items: center; }
+    .nav-menu a { text-decoration: none; color: var(--text-muted); font-weight: 600; font-size: 0.9rem; transition: 0.2s; }
+    .nav-menu a:hover { color: var(--primary); }
+    .btn-cta { background: var(--primary); color: white !important; padding: 10px 20px; border-radius: 8px; }
+
+    /* Hero */
+    .hero {
+      padding: 80px 24px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--white) 0%, var(--bg-soft) 100%);
+    }
+
+    .hero-content { max-width: 800px; margin: 0 auto; }
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: #fef9c3;
+      color: #854d0e;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    h1 { font-size: clamp(2.5rem, 6vw, 3.5rem); font-weight: 800; color: var(--primary); line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; }
+    .hero-p { font-size: 1.15rem; color: var(--text-muted); max-width: 600px; margin: 0 auto 40px; }
+
+    .app-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .app-btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 700;
+    }
+    .btn-apple { background: var(--primary); color: white; }
+    .btn-google { background: var(--white); color: var(--primary); border: 2px solid #e2e8f0; }
+    .app-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+
+    /* Section Styling */
+    section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+    .section-title { margin-bottom: 48px; text-align: center; }
+    .section-title h2 { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+
+    /* Cards */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .card {
+      background: var(--white);
+      padding: 32px;
+      border-radius: var(--radius);
+      border: 1px solid #e2e8f0;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .card:hover { border-color: var(--accent); transform: translateY(-5px); box-shadow: var(--shadow-md); }
+    .card-icon { font-size: 2rem; margin-bottom: 20px; display: block; }
+    .card h3 { color: var(--primary); margin-bottom: 12px; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
+
+    /* Features Grid */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .f-item { background: #fff; padding: 24px; border-radius: var(--radius); border-left: 4px solid var(--accent); }
+
+    /* Social Area */
+    .social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .social-link {
+      display: flex; align-items: center; gap: 15px; padding: 20px;
+      background: white; border-radius: var(--radius); text-decoration: none; border: 1px solid #e2e8f0;
+    }
+    .social-link.yt:hover { border-color: #ff0000; }
+    .social-link.ig:hover { border-color: #e1306c; }
+
+    /* Footer */
+    footer { background: var(--primary); color: #94a3b8; padding: 60px 24px; text-align: center; }
+    .footer-links { margin: 20px 0; display: flex; justify-content: center; gap: 20px; }
+    .footer-links a { color: var(--white); text-decoration: none; font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      .nav-menu { display: none; }
+      .social-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner">
+    🚀 2026 Müfredatı Soru Bankası Yayında! 
+    <a href="#indir">Hemen İndir</a>
+  </div>
+
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo-area">
+        <img src="http://ehliyetcenkhoca.com/cenkhoca.png" alt="Cenk Hoca Logo" />
+        <span class="logo-text">Cenk Hoca</span>
+      </a>
+      <div class="nav-menu">
+        <a href="#sorular">Soru Çöz</a>
+        <a href="#ozellikler">Özellikler</a>
+        <a href="#sosyal">Sosyal Medya</a>
+        <a href="#indir" class="btn-cta">Ücretsiz Başla</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">Millî Eğitim Bakanlığı Uyumlu</span>
+      <h1>Ehliyet Sınavını<br/><span style="color:var(--accent)">Cenk Hoca</span> ile Garantile</h1>
+      <p class="hero-p">Binlerce güncel soru, detaylı video çözümler ve Türkiye'nin en çok tercih edilen mobil hazırlık uygulaması bir arada.</p>
+      
+      <div class="app-buttons" id="indir">
+        <a href="https://apps.apple.com/us/app/id6744372996" class="app-btn btn-apple" target="_blank">
+          <span> App Store</span>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.ehliyetsorulari.cenkhoca" class="app-btn btn-google" target="_blank">
+          <span>🤖 Play Store</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section id="sorular">
+    <div class="section-title">
+      <h2>Online Sınav Platformlarımız</h2>
+      <p>Dilediğin platformdan hemen test çözmeye başla.</p>
+    </div>
+    <div class="grid">
+      <a href="https://mebehliyet.com" class="card" target="_blank">
+        <span class="card-icon">🚗</span>
+        <h3>MEB Ehliyet</h3>
+        <p>MEB arayüzüne en yakın deneyim, çıkmış sorular ve haftalık denemeler.</p>
+        <span style="font-weight:700; color:var(--accent)">mebehliyet.com →</span>
+      </a>
+      <a href="https://ehliyet.io" class="card" target="_blank">
+        <span class="card-icon">⚡</span>
+        <h3>Ehliyet.io</h3>
+        <p>Modern arayüz, akıllı analiz sistemi ve eksik olduğun konulara özel testler.</p>
+        <span style="font-weight:700; color:var(--accent)">ehliyet.io →</span>
+      </a>
+    </div>
+  </section>
+
+  <div style="background: var(--white);">
+    <section id="ozellikler">
+      <div class="section-title">
+        <h2>Neden Bizi Seçmelisiniz?</h2>
+      </div>
+      <div class="features-grid">
+        <div class="f-item">
+          <strong>✅ Güncel Müfredat</strong>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:8px;">2026 yılı tüm değişiklikleri kapsar.</p>
+        </div>
+        <div class="f-item">
+          <strong>🎥 Video Çözümler</strong>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:8px;">Anlamadığınız soru kalmasın.</p>
+        </div>
+        <div class="f-item">
+          <strong>📊 Gelişim Takibi</strong>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:8px;">Başarı yüzdenizi anlık görün.</p>
+        </div>
+        <div class="f-item">
+          <strong>📱 Çevrimdışı Mod</strong>
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-top:8px;">İnternetiniz olmasa da çalışın.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section id="sosyal">
+    <div class="section-title">
+      <h2>Topluluğumuza Katılın</h2>
+    </div>
+    <div class="social-grid">
+      <a href="https://www.youtube.com/@ehliyetsinavsorulari1" class="social-link yt" target="_blank">
+        <span style="font-size:1.5rem">▶️</span>
+        <div>
+          <div style="font-weight:700; color:var(--primary)">YouTube'da İzle</div>
+          <div style="font-size:0.8rem; color:var(--text-muted)">Hoca Anlatımıyla Soru Çözümleri</div>
+        </div>
+      </a>
+      <a href="https://instagram.com/ehliyetcenkhoca" class="social-link ig" target="_blank">
+        <span style="font-size:1.5rem">📸</span>
+        <div>
+          <div style="font-weight:700; color:var(--primary)">Instagram'da Takip Et</div>
+          <div style="font-size:0.8rem; color:var(--text-muted)">Günlük Bilgi Notları ve Duyurular</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div style="max-width:1100px; margin:0 auto;">
+      <p style="color:white; font-weight:700; margin-bottom:10px;">Ehliyet Cenk Hoca</p>
+      <p>© 2026 ehliyetcenkhoca.com — Sınav Başarı Rehberiniz.</p>
+      <div class="footer-links">
+        <a href="https://mebehliyet.com">MEB Ehliyet</a>
+        <a href="https://ehliyet.io">Ehliyet.io</a>
+        <a href="#">Gizlilik Politikası</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
